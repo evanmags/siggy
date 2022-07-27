@@ -1,0 +1,19 @@
+[project]
+name = "siggy"
+version = "0.0.1"
+requires-python = ">=3.8"
+dependencies = [
+    "google-api-python-client==2.55.0",
+    "google-auth-httplib2==0.1.0",
+    "google-auth-oauthlib==0.5.2",
+    "Jinja2==3.1.2",
+]
+
+[project.scripts]
+siggy = "siggy.cli:cli"
+
+[build-system]
+requires = ["setuptools"]
+
+[tool.setuptools.package-data]
+siggy = ["templates/base.py"]

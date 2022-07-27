@@ -1,0 +1,11 @@
+.env
+.vscode
+
+__pycache__
+
+*.egg-info
+build
+
+client_secret.json
+token.json
+
